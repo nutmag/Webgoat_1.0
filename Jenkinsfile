@@ -39,7 +39,7 @@ pipeline {
           sh 'mvn sonar:sonar \
              -Dsonar.projectKey=Webgoat \
              -Dsonar.host.url=http://vast.fruxlabs.com:9000 \
-             -Dsonar.login=3747b4952b1c2f98a7270e7899200e3cb8a66a52
+             -Dsonar.login=3747b4952b1c2f98a7270e7899200e3cb8a66a52'
           sh 'cat target/sonar/report-task.txt'
         }
       }
